@@ -1,0 +1,71 @@
+<app-page-title></app-page-title>
+<div class="flex mt-6">
+
+
+
+  <form class="max-w-sm mx-auto">
+    <div class="mb-5">
+
+      <input
+    type="text"
+    class="w-full h-16 px-4 py-2 rounded shadow"
+    placeholder="Meeting Topic"
+    [(ngModel)]="newTask"
+    name="newTask"
+
+  />
+      
+    </div>
+    <div class="mb-5">
+
+      <input
+    type="text"
+    class="w-42 h-16 px-4 py-2 rounded shadow"
+    placeholder="Number of people"
+    [(ngModel)]="numpeople"
+    name="numpeople"
+
+  />
+     
+    </div>
+    <div class="mb-5">
+    <input
+    type="date"
+    class="w-full h-16 px-4 py-2 rounded shadow datetimepicker"
+    placeholder="Date And Time"
+    [(ngModel)]="date"
+    name="date"
+
+  /><br/>
+
+    </div>
+    <div class="mb-5">
+
+  <input
+    type="time"
+    class="w-full h-16 px-4 py-2 rounded shadow datetimepicker"
+    [(ngModel)]="time"
+    name="time"
+ 
+  /><br/>
+  </div>
+    
+    <button type="submit" (click)="addTask()"  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+  </form>
+  
+
+
+
+
+
+
+  <br/>
+
+  <br/>
+
+
+  
+</div>
+<div class="flex flex-col mt-6">
+  <app-task-list [taskList]="taskList" (complete)="onComplete($event)" (important)="onImportant($event)"></app-task-list>
+</div>

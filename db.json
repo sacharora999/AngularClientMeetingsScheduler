@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": "cca2",
+      "title": "Topic: Meeting 1 <====>  Number of People: 5<====> Date: 2024-01-31 <====> Time: 20:42",
+      "completed": true
+    },
+    {
+      "id": "e2aa",
+      "title": "Topic: Meeting 2 <====>  Number of People: 3<====> Date: 2024-02-13 <====> Time: 19:55",
+      "completed": true,
+      "important": true
+    }
+  ],
+  "clients": [
+    {
+      "id": "6381",
+      "title": "Name: Sachin Arora <====>  Email : sacharora99@gmail.com<====> Address : H-45"
+    },
+    {
+      "id": "032f",
+      "title": "Name: Ram <====>  Email : ram@gmail.com<====> Address : ram123"
+    }
+  ]
+}
